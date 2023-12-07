@@ -33,7 +33,7 @@ if user_input:
     query = user_input  # Assuming the user input is the query
     
     # Replace this block with your existing backend code
-    dataset_corpus_path = "/content/drive/MyDrive/IS883 Project/Project Milestone 2/Test Dataset"
+    dataset_corpus_path = "Short Boston Code.pdf"
     
     pdf_loader = PyPDFDirectoryLoader(dataset_corpus_path)
     documents = pdf_loader.load()
