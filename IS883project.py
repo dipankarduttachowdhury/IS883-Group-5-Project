@@ -19,7 +19,7 @@ from langchain.chains.question_answering import load_qa_chain
 from langchain.llms import OpenAI
 
 # Set up your OpenAI API key
-openai.api_key = os.environ.get('OPENAI_API_KEY')
+openai_api_key = os.environ.get('OPENAI_API_KEY')
 
 # Initialize Streamlit
 st.title("LLM Chatbot")
@@ -49,7 +49,7 @@ if user_input:
     embeddings = OpenAIEmbeddings(openai_api_key=openai_api_key)
     db = FAISS.from_documents(chunks, embeddings)
     
-    chain = load_qa_chain(OpenAI(openai_api_key=openai.api.key), chain_type="stuff")
+    chain = load_qa_chain(OpenAI(openai_api_key=openai_api_key), chain_type="stuff")
     
     docs = db.similarity_search(query, k=2)
     
