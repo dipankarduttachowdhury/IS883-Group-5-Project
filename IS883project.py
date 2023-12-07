@@ -18,7 +18,7 @@ from langchain.chains.question_answering import load_qa_chain
 from langchain.llms import OpenAI
 
 # Set up your OpenAI API key
-openai_api_key = "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"  # Replace with your OpenAI API key if not set via environment variable
+openai_api_key = OPEN_API_KEY  # Replace with your OpenAI API key if not set via environment variable
 
 # Initialize Streamlit
 st.title("Azure Guide Chatbot")
