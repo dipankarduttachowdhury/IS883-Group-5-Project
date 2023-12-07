@@ -4,7 +4,7 @@ import streamlit as st
 import openai
 import os
 # Set up your OpenAI API key
-openai.api_key = os.environ.get('OPENAI_API_KEY')
+openai.api_key = os.environ.get('OPEN_API_KEY')
 # Initialize Streamlit
 st.title("Legal LLM")
 # Create a text input field for user queries
