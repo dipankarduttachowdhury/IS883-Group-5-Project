@@ -20,7 +20,7 @@ from langchain.llms import OpenAI
 openai_api_key = OPEN_API_KEY  # Replace with your OpenAI API key if not set via environment variable
 
 # Initialize Streamlit
-st.title("Azure Guide Chatbot")
+st.title("LLM Chatbot")
 
 # Create a text input field for user queries
 user_input = st.text_input("Ask a question:")
