@@ -1,4 +1,11 @@
 # azure.py
+!pip install langchain
+!pip install pypdf
+!pip install openai==0.28
+!pip install tiktoken
+!pip install faiss-cpu
+!pip install nltk
+!pip install pandas
 # Import necessary libraries
 import streamlit as st
 import openai
